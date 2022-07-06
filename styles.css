@@ -1,0 +1,124 @@
+:root{
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --verydark-bluemain-BG: hsl(217, 54%, 11%);
+    --verydarkblue-card-BG: hsl(216, 50%, 16%);
+    --verydarkblue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: var(--verydark-bluemain-BG);
+}
+main{
+    width: 33.7rem;
+    height: 58rem;
+    background-color: var(--verydarkblue-card-BG);
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    object-fit: contain;
+    border-radius: 8px;
+    max-width: 33.7rem;
+    max-height: 58rem;
+}
+.equilibrium{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: var(--cyan);
+}
+.text{
+    margin-left: 20px;
+    margin-top: 25px;    
+}
+.text h1{
+    color: var(--white);
+}
+.text p{
+    color: var(--softblue);
+    margin-top: 15px;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.price{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.price .ethereum-price{
+    color: var(--cyan);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+.price .ethereum-price span{
+    background-image: url('./images/icon-ethereum.svg');
+    padding-right: 20px;
+    background-repeat: no-repeat;
+}
+
+.price .time-left{
+    color: var(--softblue);
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+.price .time-left span{
+    background-image: url('./images/icon-clock.svg');
+    padding-right: 22px; 
+    background-repeat: no-repeat;
+}
+hr{
+  height: 1px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-color: var(--softblue);
+}
+.separator{
+    margin-right: 20px;
+    margin-left: 20px;
+    border-top: 1px solid var(--verydarkblue-line);
+    margin-top: 20px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.profile p{
+    font-size: 1.8rem;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: var(--softblue);
+}
+.profile p span{
+    color: var(--white);
+}
+.profile p span:hover{
+    color: var(--cyan);
+}
+.text h1:hover{
+    color: var(--cyan);
+}
